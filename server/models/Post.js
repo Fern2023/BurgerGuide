@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const postSchema = new mongoose.Schema({
-  title: {
+  restaurant: {
     type: String,
     required: [true, 'Title is required'],
   },
@@ -9,18 +9,26 @@ const postSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
   },
-  content: {
+  ranking: {
     type: String,
     required: [true, 'Content is required'],
   },
-  image: {
+  comment: {
     type: String,
-    required: [true, 'image-url is required'],
+    required: [true, 'comment is required'],
+  },
+  image_url: {
+    type: String,
+    default: 'https://via.placeholder.com',
+  },
+  location: {
+    type: String,
+    required: [true, 'Location is required'],
   },
   date: {
     type: Date,
-    default: Date.now,
-  },
+    default: Date.now
+  }
 });
 
 export default mongoose.model('Post', postSchema);
