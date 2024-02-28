@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div className="bg-black">
+    <div className="flex items-center bg-black">
       {/* ImageContainer */}
       <div className="flex flex-col items-center max-w-screen-xl mx-auto relative"> 
         {/* ImageTop */}
@@ -9,7 +9,6 @@ const HeroSection = () => {
           alt="LandingPageLogo"
           className="w-full object-fill h-auto max-w-screen-xl"
         />
-
         {/* ImageBottom */}
         <img
           src="../src/assets/LandingPageLogo2.jpg"
@@ -17,9 +16,21 @@ const HeroSection = () => {
           className="w-full object-fill h-auto max-w-screen-xl"
         />
 
-        {/* Container mit dem Text und dem Bild */}
-        <div className=""></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center bg-black rounded-md">
+        {/* Container with Image & Picture */}
+
+
+<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient rounded-md shadow p-8 max-w-screen-xl">
+
+
+
+
+</div>
+
+
+
+
+
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black rounded-md">        
           <div className="flex items-center mx-auto p-8 max-w-screen-xl">
             <img
               src="../src/assets/BurgerGuideLogo3.png"

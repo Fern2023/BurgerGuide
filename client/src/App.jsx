@@ -1,10 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import HeroSection from './Components/Hero'
+import BurgerRating from './Components/BurgerRating'
+
+
+
+// import BurgerStores from './Components/BurgerStores'
+// import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -14,6 +18,10 @@ function App() {
     <>
  <Navbar />
  <HeroSection />
+  <BurgerRating />
+{/* <Routes>
+ <Route path='/BurgerStores' element={<BurgerStores />} />
+ </Routes> */}
  <Footer />
     </>
   )
