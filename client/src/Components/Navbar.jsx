@@ -1,4 +1,5 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
   return (
@@ -12,7 +13,11 @@ const Navbar = () => {
 
         {/* About Us Element */}
         <a href="/about" className="text-cbb26a text-lg font-bold">About Us</a>
-        
+
+        {/* BurgerStore Element
+        <Link to='/BurgerStores' className='text-cbb26a text-lg font-bold'>
+        Burger Stores</Link> */}
+
         {/* Login Element */}
         <a href="/login" className="text-cbb26a text-lg font-bold">Login</a>
       </div>
